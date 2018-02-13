@@ -1,0 +1,206 @@
+/* Struktur for alle sider */
+body {
+    margin: 0;
+    background: #f0f0f0;
+    font-family: "Gill Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo {	position: absolute;}
+
+#logo h3 {
+    margin: 0;
+    padding: 12px;
+    color: #11c3ff;
+}
+
+nav > ul {
+    margin: 0;
+    background-color: #282828;
+    text-align: center;
+}
+
+nav > ul > li{
+    display: inline-block;
+    padding: 12px 25px;
+}
+
+nav > ul > li > a {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+nav a:not(.active) {color: #ccc;}
+
+nav a:not(.active):hover {
+    color: #11c3ff;
+    text-decoration-line: underline;
+}
+
+#subheader {
+    position: relative;
+    text-align: center;
+}
+
+#subheader > img {
+    width: 100%;
+    max-height: 480px;
+}
+
+#subheader > h1 {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+#subheader span {
+    color: #ffffff;
+    background-color: rgba(5, 5, 5, 0.7);
+    white-space: pre;
+}
+
+#main {
+    width: 97%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.section {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: inherit;
+}
+
+.section > h2 {padding: 2px 10px 2px 10px;}
+
+.section > a {
+    color: #11c3ff;
+}
+
+footer {
+    clear: both;
+    margin-top: 2px;
+    width: 100%;
+    background-color: #282828;
+
+}
+
+footer > ul {
+    margin: 0;
+    padding: 18px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer > ul > li {
+    display: inline-block;
+    padding-right: 25px;
+    font-variant: small-caps;
+}
+
+/* Struktur for hovedsiden */
+
+.section img {
+    margin: 50px;
+
+}
+
+/*Struktur for underside 1 */
+
+#attraksjoner {
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Struktur for underside 2 */
+
+#map {
+    margin: 0 auto;
+    height: 350px;
+    width: 80%;
+    padding: 20px;
+}
+
+.hotel {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 2px;
+    min-width: 500px;
+    display: table;
+    background-color: #e2e0e0;
+    text-align: left;
+
+}
+
+@media screen and (max-width:750px) {
+
+    #subheader,  #main {
+        font-size: 12px;
+    }
+
+    #logo {visibility: hidden;}
+
+    nav > ul > li {
+        margin: 0;
+        padding: 12px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .section img {
+        max-height: 70px;
+        max-width: 70px;
+        display: block;
+    }
+
+
+    footer > ul {bottom: 0;}
+
+    footer > ul > li{
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    #subheader,  #main {
+        font-size: 12px;
+    }
+
+    nav > ul > li {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+        text-align: center;
+    }
+
+
+    footer > ul > li{
+        text-align: center;
+        margin: 0;
+        padding: 4px;
+        box-sizing: border-box;
+        bottom: inherit;
+    }
+}
