@@ -178,6 +178,18 @@ table a {
     text-align: left;
 
 }
+/* alt over 960px får disse egenskapene */
+@media screen and (min-width:960px) {
+
+
+    .grid {
+        flex-flow: row-reverse;
+    }
+
+
+}
+
+
 
 @media screen and (max-width:750px) {
 
