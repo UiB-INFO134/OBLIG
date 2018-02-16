@@ -13,7 +13,7 @@ a {
 #logo {	position: absolute;}
 
 #logo h3 {
-    margin: 0;
+    margin: 2px;
     padding: 12px;
     color: #11c3ff;
 }
@@ -48,10 +48,12 @@ nav a:not(.active):hover {
 
 #subheader > img {
     width: 100%;
-    max-height: 480px;
+    max-height: 480px; /* denne må vi endre...den ødelegger aspect ratioen på bildet*/
+
 }
 
 #subheader > h1 {
+    font-size:  60px;
     position: absolute;
     top: 25%;
     width: 100%;
@@ -137,7 +139,6 @@ footer > ul > li {
 }
 
 
-
 /*Struktur for underside 1 */
 #main table {
     margin-left: auto;
@@ -158,8 +159,8 @@ table a {
     color: #282828;
 }
 
-/* Struktur for underside 2 */
 
+/* Struktur for underside 2 */
 #map {
     margin: 0 auto;
     height: 350px;
