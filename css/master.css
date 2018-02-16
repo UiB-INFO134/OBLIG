@@ -132,7 +132,7 @@ footer > ul > li {
     white-space: pre;
 }
 
-#grid img {
+.grid img {
     width: 100%;
 }
 
@@ -194,7 +194,7 @@ table a {
         text-align: center;
     }
 
-    #grid {
+    .grid {
         flex-direction: column;
     }
 
