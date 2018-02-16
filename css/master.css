@@ -114,14 +114,26 @@ footer > ul > li {
 }
 
 .box {
+    position: relative;
     margin: 1px;
     border: 1px solid chartreuse;
+    text-align: center;
+}
+
+.box h2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.box span {
+    color: #000000;
+    background-color: rgba(255,255,255, 0.7);
+    white-space: pre;
 }
 
 #grid img {
     width: 100%;
-    max-height: 600px;
-    max-width: 600px;
 }
 
 
