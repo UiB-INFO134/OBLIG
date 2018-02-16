@@ -121,8 +121,8 @@ footer > ul > li {
 }
 
 .box h2 {
-    position: absolute;
-    top: 40%;
+    position: relative;
+    top: -50%;
     width: 100%;
 }
 
@@ -131,13 +131,9 @@ footer > ul > li {
     background-color: rgba(255,255,255, 0.7);
     white-space: pre;
 }
-/* lager en kul effekt*/
-.box img:hover {
-    max-width: 560px;
+.box img {
+    max-width: 500px;
 }
-
-
-
 .grid img {
     width: 100%;
 }
@@ -184,7 +180,8 @@ table a {
 
 }
 /* alt over 960px får disse egenskapene */
-@media screen and (min-width:960px) {
+@media screen and (min-width:1200px)
+and (min-width:750px) {
 
     html {
         max-width: 1200px;
@@ -193,16 +190,15 @@ table a {
     .grid {
         flex-direction: row-reverse;
         flex-flow: row wrap;
-
-
     }
     .box img {
        max-width: 550px;
-
     }
 }
-
-
+/* lager en kul effekt*/
+    .box img:hover {
+         max-width: 555px;
+}
 
 @media screen and (max-width:750px) {
 
