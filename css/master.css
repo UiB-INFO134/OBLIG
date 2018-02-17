@@ -109,7 +109,7 @@ footer > ul > li {
 /* Struktur for hovedsiden */
 
 .grid {
-    margin-top: 60px; /* <- lagt til for å få space mellom header og grid */
+    padding-top: 60px; /* <- lagt til for å få space mellom header og grid */
     background-color: #ffffff;
 
     display: flex;
@@ -117,26 +117,26 @@ footer > ul > li {
     flex-flow: row wrap;    /* <- Kommentar: row wrap er det samme som wrap? row-wrap (bindesstrek) lager rad */
 
     /* Justify-content: */
-    /* flex-grow: størst for stor bokser, små for de minste */
+    /* flex-grow: størst  tall for store bokser, små for de minste */
     /* Sjekk ut:  https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery */
 }
 
 .box {
     flex: 30%; /* <- Hver box flexer 30% av grid */
-    overflow: hidden;  /* <- Hindrer at img flyter over div */
+    overflow: hidden;  /* <- Hindrer at img flyter over box */
 
     position: relative;
     text-align: center;
 
-    margin: 1.5px; /* Endret fra " margin: 0;"  for å få litt space mellom boksene */ 
+    margin: 0.5%; /* Endret fra " margin: 0;"  for å få litt space mellom boksene */
 
 }
 
 .box h2 {
     width: 100%;
-    position: absolute;  /*<- Endret fra relative for å få tekst oppå img */
+    position: absolute;  /*<- Endret fra relative for å få tekst over img */
     cursor: pointer; /* <- lagt til for å vise at det er en link */
-    top: 50%;   /*<- Endret til 50% for plassere tekst i midtben av img uansett skjerm */
+    top: 40%;   /*<- Endret til 40% for plassere tekst i midten av img uansett skjerm */
 }
 
 
