@@ -10,28 +10,29 @@
 <body>
 
 <header>
+	<div id="banner">                                       <!-- Nytt: Banner istedenfor subheader. Bedre for å legge inn søkebar osv.-->
+		<img src="img/bergen.jpg" alt="banner">
+		<h1><span> Opplev Bergen </span> </h1>
+	</div>
 	<nav>
-		<div id="logo">
-			<a href="index.html"><h3>OpplevBergen</h3></a>
-		</div>
 		<ul>
-			<li> <a href="index.html" class="active">Hjem</a></li>
-			<li> <a href="underside_1.html">Attraksjoner</a></li>
-			<li> <a href="underside_2.html">Overnatting</a></li>
-			<li> <input type="text" placeholder="Søk..." name="søk">
-				<button type="submit"><i class="fa fa-search"></i></button> </li>
-			<!-- Søk? (form, input og button)-->
+			<li> <a href="index.html" class="active">Hjem</a> </li>
+			<li> <a href="underside_1.html">Attraksjoner</a> </li>
+			<li> <a href="underside_2.html">Overnatting</a> </li>
+			<li id="search"> <img src="img/søk.png" alt="search-icon"></li>   <!-- Nytt: Ikon for søk på navbar.-->
 		</ul>
 	</nav>
-	<div id="subheader">
-		<img src="img/bergen.jpg" alt="subheader">
-		<h1><span>Opplev Bergen</span></h1>
-	</div>
+
 </header>
 
-<!-- Søkebar? Blir nødvendig! -->
-
 <div class="grid">
+
+    <div class="searchbox">   <!-- Ny box for søkebar og knapp -->
+        <form>
+            <input type="text" name="søk" placeholder="Søk blant attraksjoner, hoteller osv. ... "> <br>
+            <button name="Søk"> Søk </button>
+        </form>
+    </div>
 	
 	<div class="box">
 		<img src="https://s-ec.bstatic.com/images/hotel/max1024x768/254/25432626.jpg">

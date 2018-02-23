@@ -1,6 +1,6 @@
-/* Struktur for alle sider */
 body {
     margin: 0;
+    padding: 10px;              /* Padding for å få litt space  */
     background: #f0f0f0;
     font-family: "Gill Sans", sans-serif;
 }
@@ -10,59 +10,65 @@ a {
     color: inherit;
 }
 
-#logo {	position: absolute;}
+header {
+    background-color: #282828; }   /* Background-colour for hele headeren istedenfor nav  */
 
-#logo h3 {
-    margin: 2px;
-    padding: 12px;
-    color: #11c3ff;
-}
-
-nav > ul {
-    margin: 0;
-    background-color: #282828;
+#banner {                     /* Erstatter subheader */
+    position: relative;
     text-align: center;
 }
+#banner > img {
+    width: 100%;
+    max-height: 280px;
 
-nav > ul > li{
+}
+#banner > h1 {
+    position: absolute;
+    font-size: 60px;
+    top: 25%;
+    width: 100%;
+    color: ghostwhite;
+}
+
+#banner span {
+    color: #ffffff;
+    background-color: rgba(5, 5, 5, 0.7);
+    white-space: pre;
+}
+
+nav {overflow: hidden;}
+
+nav > ul {margin: 0; }
+
+nav > ul > li {
+    float: left;             /* Plasserer alle linker til venstre */
     display: inline-block;
-    padding: 12px 25px;
+    padding: 15px 15px 15px 0;
 }
 
 nav > ul > li > a {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
+    padding-right: 60px;
 }
 
 nav a:not(.active) {color: #ccc;}
 
 nav a:not(.active):hover {
     color: #11c3ff;
-    text-decoration-line: underline;
+    text-decoration-line: none;
 }
 
-#subheader {
-    position: relative;
-    text-align: center;
+
+nav > ul > #search {
+    float: right;            /* Plasserer søkebaren til høyre */
 }
 
-#subheader > img {
-    width: 100%;
-    max-height: 480px; /* denne må vi endre...den ødelegger aspect ratioen på bildet*/
+#search > img {
+    width: 25px;
+    height: 25px;
 }
 
-#subheader > h1 {
-    font-size:  60px;
-    position: absolute;
-    top: 25%;
-    width: 100%;
-}
-
-#subheader span {
-    color: #ffffff;
-    background-color: rgba(5, 5, 5, 0.7);
-    white-space: pre;
-}
 
 #main {
     width: 97%;
@@ -119,6 +125,21 @@ footer > ul > li {
     /* Justify-content: */
     /* flex-grow: størst  tall for store bokser, små for de minste */
     /* Sjekk ut:  https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery */
+}
+
+.searchbox {
+    flex: 100%;              /* Denne boxen tar 100% plass/width av grid */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.searchbox > form > input {  /* Nytt: Søkebar og knapp i searchbox */
+    width: 70%;                     /* Tar 70% box */
+    border: 1px solid #333333;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #ffffff;
+    padding: 10px 15px 10px 25px;
 }
 
 .box {
@@ -216,42 +237,20 @@ table a {
     display: table;
     background-color: #e2e0e0;
     text-align: left;
-
 }
-/* alt over 960px får disse egenskapene */
-@media screen and (min-width:1200px)
-and (min-width:750px) {
 
-
-/*
-    html {
-        max-width: 1200px;  <- Bedre at grid's max-width endres? For at header og footer beholder 100% width 
-        margin: 0 auto;        
-
-*/
-
-    .grid {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding-top: 60px; /* <- lagt til for å få space mellom header og grid. Kan også bruke margin */
-        flex-direction: row-reverse; 
-        flex-flow: row wrap;
-    }
-
-    /* .box img {
-         max-width: 550px;          <- Nødvendig? Arver 100% width fra .box img 
-
-    } */
-}
 
 
 @media screen and (max-width:750px) {
 
-    #subheader,  #main {
-        font-size: 12px;
+
+    body {
+        padding: 0;
     }
 
-    #logo {visibility: hidden;}
+   #banner {
+       display: none;     /* <- Skjuler banner */
+   }
 
     nav > ul > li {
         margin: 0;
@@ -277,7 +276,7 @@ and (min-width:750px) {
 
 @media screen and (max-width:480px) {
 
-    #subheader h1,  #main {
+    #banner h1,  #main {
          font-size: 2rem /*  for bedre tilpasning. Endret fra " font-size: 12px; " */ 
     }
 
