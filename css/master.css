@@ -12,8 +12,8 @@ a {
 
 #logo {
     position: absolute;
-    margin: 8px;
-    padding: 0 5px 5px 0;
+    margin: 2px;
+    padding: 0 5px 0 5px; /* t r b l */
     border-radius: 8px; /* for å få avrundede kanter */
     background-color: #626364;
     font-size: 12px;
