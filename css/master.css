@@ -64,7 +64,7 @@ nav > ul > #search {
     float: right;            /* Plasserer søkebaren til høyre */
 }
 
-#search > img {
+nav > ul > #search > img {
     width: 25px;
     height: 25px;
 }
