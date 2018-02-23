@@ -10,12 +10,17 @@ a {
     color: inherit;
 }
 
-#logo {	position: absolute;}
+#logo {
+    position: absolute;
+    margin: 8px;
+    padding: 0 5px 5px 0;
+    border-radius: 8px; /* for å få avrundede kanter */
+    background-color: #626364;
+    font-size: 12px;
+}
 
-#logo h3 {
-    margin: 2px;
-    padding: 12px;
-    color: #11c3ff;
+#logo a:link {
+    text-decoration: none; /* fjerne streken når man holder musen over linken */
 }
 
 nav > ul {
@@ -250,8 +255,6 @@ and (min-width:750px) {
     #subheader,  #main {
         font-size: 12px;
     }
-
-    #logo {visibility: hidden;}
 
     nav > ul > li {
         margin: 0;
